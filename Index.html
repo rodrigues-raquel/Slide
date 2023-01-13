@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Componente Slide</h1>
+    <div class="slide-container">
+        <section class="slide fade">
+            <div class="number">1 / 3</div>
+            <img src="/img/img1.jpg" alt="Paisagem 01" style="width:100%">
+        </section>
+        <section class="slide fade">
+            <div class="number">2 / 3</div>
+            <img src="/img/img2.jpg" alt="Paisagem 02" style="width:100%">
+        </section>
+        <section class="slide fade">
+            <div class="number">3 / 3</div>
+            <img src="/img/" alt="Paisagem 03" style="width:100%">
+        </section>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+<script src="./script.js"></script>
+
+</body>
+
+</html>
